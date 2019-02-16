@@ -1,0 +1,25 @@
+echo "Setting Prompt"
+
+PROMPT_COMMAND=__prompt_command
+
+__prompt_command() {
+    local exit="$?"
+
+    local reset="\[\017\]"
+    local normal="\[\033[0m\]"
+    local red="\[\033[31;1m\]"
+    local yellow="\[\033[33;1m\]"
+    local green="\[\033[0;32m\]"
+    local white="\[\033[37;1m\]"
+    local blue="\[\033[0;34m\]"
+
+    if [ $exit = 0 ]; then
+        STATUS="${green}:)${normal}"
+    else
+        STATUS="${red}:(${normal}"
+    fi    
+
+    PS1="${reset}${blue}[\A] ${yellow}\u${normal} ${STATUS}${normal} $ "    
+}
+
+PS2="| => "

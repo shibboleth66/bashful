@@ -1,0 +1,11 @@
+echo "Setting Aliases"
+
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs'
+alias awskeys='cd /Users/shibboleth/Google\ Drive/Neevio/Documents/Cloud\ Services/aws/ssh/keys'
+alias ll="ls -l"
+alias la="ls -al"
+alias mkdir="mkdir -pv"
+# alias cd="cd && ll"
+
+
+alias reload="source ~/.bash_profile"
