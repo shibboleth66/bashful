@@ -19,7 +19,7 @@ __prompt_command() {
         STATUS="${red}✖${normal}"
     fi    
 
-    PS1="${reset}${blue}[\A] ${yellow}\w${normal} ${STATUS}${normal} $ "    
+    PS1="${reset}${blue}[\A] ${yellow}\W${normal} ${STATUS}${normal} $ "    
 }
 
 PS2="| => "
