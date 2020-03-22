@@ -1,4 +1,4 @@
-echo "Setting Prompt"
+[[ ${verbose} = true ]] && echo "Setting Prompt"
 
 PROMPT_COMMAND=__prompt_command
 

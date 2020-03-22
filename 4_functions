@@ -1,4 +1,4 @@
-echo "Setting Functions"
+[[ ${verbose} = true ]] && echo "Setting Functions"
 
 zipf () { 
     zip -r "$1".zip "$1"

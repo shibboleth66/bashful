@@ -1,6 +1,6 @@
-echo "Setting Virtual Environments"
+[[ ${verbose} = true ]] && echo "Setting Virtual Environments"
 
-VENV="${HOME}/virtualenvs/development/bin/activate"
+VENV="${HOME}/.venv/bin/activate"
 
 if [ -f "${VENV}" ]; then
     echo " : ${VENV}"

@@ -1,2 +1,2 @@
-echo "Setting Paths"
+[[ ${verbose} = true ]] && echo "Setting Paths"
 
