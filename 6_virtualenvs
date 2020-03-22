@@ -1,8 +1,16 @@
 [[ ${verbose} = true ]] && echo "Setting Virtual Environments"
 
-VENV="${HOME}/.venv/bin/activate"
+# Set path to vnev in current folder
+VENV="$(pwd)/.venv/bin/activate"
 
 if [ -f "${VENV}" ]; then
-    echo " : ${VENV}"
+
+    # Deactivate any existing virtual environments
+    if [ -n "$VIRTUAL_ENV" ]; then
+        echo "Deactivating existing venv: $VIRTUAL_ENV"
+        deactivate
+    fi
+
+    echo "Activating ${VENV}"
     source ${VENV}
 fi
